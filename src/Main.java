@@ -1,3 +1,4 @@
+import java.util.Date;
 import static ui.UIMenu.*;
 
 public class Main {
@@ -14,11 +15,20 @@ public class Main {
         //System.out.println(Doctor.id);
 
  */
-        // showMenu();
-        Doctor myDoctor = new Doctor("Who", "del tiempo");
-        System.out.println(myDoctor.name);
-        System.out.println(myDoctor.speciality);
+        // showMenu(); //Es un método de la clase ui que hemos importado al inicio del programa. Al importar la clase no
+        //es necesario referenciar ni instanciar la clase general.
 
+        Doctor myDoctor = new Doctor("Who", "del tiempo");
+        myDoctor.addAvailableAppointment(new Date(), "4pm");
+        myDoctor.addAvailableAppointment(new Date(), "10am");
+        myDoctor.addAvailableAppointment(new Date(), "2pm");
+
+        for (Doctor.AvailableAppointment aA: myDoctor.getAvailableAppointments()){
+            System.out.println(aA.getDate() + " " + aA.getTime());
+        }
+
+        System.out.println();
+        System.out.println();
         Patient patient = new Patient("Nuria Mariella", "numar@numilu.com");
         patient.setWeight(52.5);
         System.out.println(patient.getWeight());
