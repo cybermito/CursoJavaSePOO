@@ -1,11 +1,19 @@
 import java.util.ArrayList;
 import java.util.Date;
 
-public class Doctor {
+public class Doctor extends User {
+
+
     //Atributos de la clase Doctor.
-    static int id = 0; //Valor que debe ser siempre autoincrementado, por eso la declaramos static.
-    private String name;
-    private String email;
+    //He comentado estos atributos para utilizar la herencia de clases.
+    //Cómo los atributos son comunes tanto a Paciente como a Doctor, se ha creado una clase superior con dichos atributos comunes, de la cuál heredaremos con extends.
+    //static int id = 0; //Valor que debe ser siempre autoincrementado, por eso la declaramos static.
+    //private String name;
+    //private String email;
+    //private String address;
+    //private String phoneNumber;
+
+    //Atributo único que diferencia al usuario Doctor.
     private String speciality;
 
     //Método constructor, cada vez que instanciamos la clase Doctor este es el primer método que se ejecuta.
@@ -17,7 +25,7 @@ public class Doctor {
     //Esto se llama sobrecarga de constructores / métodos.
     Doctor(String name, String speciality){
         System.out.println("El nombre del Doctor asignado es: " + name);
-        id++;
+        //id++; //Lo quitamos ya que el identificador se usaría directamente con una base de dato.
         this.name = name;
         this.speciality = speciality;
     }

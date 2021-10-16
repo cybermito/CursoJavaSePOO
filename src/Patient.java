@@ -1,18 +1,21 @@
 public class Patient {
-
+    /*
     static int id = 0;
     private String name; //Encapsulamos la variable para que no se pueda modificar. Lo hacemos con el modificador de acceso private.
                          //private hace que la variable solamente sea accesible desde la propia clase y no desde fuera.
     private String email;
     private String address;
     private String phoneNumber;
+
+     */
+    //Atributos que diferencia al usario Paciente.
     private String birthday;
     private double weight;
     private double height;
     private String blood;
 
     Patient(String name, String email){
-        id++;
+        //id++; Comentado por la misma razón que lo hemos comentado en al clase Doctor.
         this.name = name;
         this.email = email;
     }
