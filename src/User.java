@@ -48,6 +48,10 @@ public class User {
     }
 
     public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
+        if (phoneNumber.length() > 8){
+            System.out.println("El número de teléfono debe ser de 8 dígitos máximo.");
+        }else if (phoneNumber.length() == 8){
+            this.phoneNumber = phoneNumber;
+        }
     }
 }

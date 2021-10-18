@@ -1,4 +1,4 @@
-public class Patient {
+public class Patient extends User{
     /*
     static int id = 0;
     private String name; //Encapsulamos la variable para que no se pueda modificar. Lo hacemos con el modificador de acceso private.
@@ -15,9 +15,11 @@ public class Patient {
     private String blood;
 
     Patient(String name, String email){
+        //Llámamos al método constructor de la clase padre.
+        super(name, email);
         //id++; Comentado por la misma razón que lo hemos comentado en al clase Doctor.
-        this.name = name;
-        this.email = email;
+        //this.name = name; //Ya no hace falta esta construcción puesto que estos atributos están en la clase padre.
+        //this.email = email;
     }
     //Para poder acceder a los datos private de la clase debemos usar los getters y los setters.
     //Esto nos permite modificar dichas variables desde fuera de la clase. Con crtl + ins podémos
@@ -30,7 +32,7 @@ public class Patient {
     public String getWeight(){
         return this.weight + " Kg.";
     }
-
+/*  Al crear la clase User estos getters y setter no hacen falta puesto que están creado en la clase padre User.
     public static int getId() {
         return id;
     }
@@ -74,6 +76,8 @@ public class Patient {
             this.phoneNumber = phoneNumber;
         }
     }
+
+ */
 
     public String getBirthday() {
         return birthday;
