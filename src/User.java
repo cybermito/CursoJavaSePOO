@@ -54,4 +54,12 @@ public class User {
             this.phoneNumber = phoneNumber;
         }
     }
+    //Aquí estamos sobreescribiendo el método toString() de la clase Object.
+    //Lo que hacemos es declararla e indicarle dentro del método lo que queremos que ejecute.
+    //La clase Object está por defecto definida, todas las clases heredan de esta superclase.
+    //En definitiva le estamos dando otro comportamiento dentro de esta clase.
+    @Override
+    public String toString() {
+        return "User: " + name + "\nEmail: " + email + "\nAddress: " + address + "\nPhone: " + phoneNumber;
+    }
 }

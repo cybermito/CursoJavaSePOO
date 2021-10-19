@@ -23,6 +23,7 @@ public class Main {
         myDoctor.addAvailableAppointment(new Date(), "10am");
         myDoctor.addAvailableAppointment(new Date(), "2pm");
 
+
         for (Doctor.AvailableAppointment aA: myDoctor.getAvailableAppointments()){
             System.out.println(aA.getDate() + " " + aA.getTime());
         }
@@ -36,7 +37,10 @@ public class Main {
         System.out.println(patient.getPhoneNumber());
         patient.setPhoneNumber("12345678");
         System.out.println(patient.getPhoneNumber());
+        System.out.println();
 
+        System.out.println("Sacando información de una clase con el uso de toString(), clase sobreescrita en la clase User");
+        System.out.println(patient);
         /*
         System.out.println(patient.name);
         System.out.println(patient.email);
