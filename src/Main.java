@@ -22,11 +22,13 @@ public class Main {
         myDoctor.addAvailableAppointment(new Date(), "4pm");
         myDoctor.addAvailableAppointment(new Date(), "10am");
         myDoctor.addAvailableAppointment(new Date(), "2pm");
+        System.out.println(myDoctor); //Carga el objeto myDoctor con el método toString() implícitamente.
 
-
+        /*
         for (Doctor.AvailableAppointment aA: myDoctor.getAvailableAppointments()){
             System.out.println(aA.getDate() + " " + aA.getTime());
         }
+        */
 
         System.out.println();
         System.out.println();
