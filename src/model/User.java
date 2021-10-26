@@ -1,6 +1,12 @@
 package model;
+/*
+    Clases Abstractas: Es una combinación entre Interface y Herencia de Clases, no implementan todos los métodos, por su composición no es
+    necesario instanciarlo, no se pueden crear instancias de una clase abstracta.
 
-public class User {
+    Interface: Te obliga a implementar todos los métodos aunque no los vayamos a utilizar.
+    Herencia: A veces no necesitamos crear instancias de una clase padre, porque esta es muy genérica.
+ */
+public abstract class User {
     //Esta clase nos permitirá definir que tipo de usuario se va a loguear: model.Doctor o Paciente.
     private int id;
     private String name;
