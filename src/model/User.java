@@ -1,5 +1,7 @@
+package model;
+
 public class User {
-    //Esta clase nos permitirá definir que tipo de usuario se va a loguear: Doctor o Paciente.
+    //Esta clase nos permitirá definir que tipo de usuario se va a loguear: model.Doctor o Paciente.
     private int id;
     private String name;
     private String email;
@@ -60,6 +62,6 @@ public class User {
     //En definitiva le estamos dando otro comportamiento dentro de esta clase.
     @Override
     public String toString() {
-        return "User: " + name + "\nEmail: " + email + "\nAddress: " + address + "\nPhone: " + phoneNumber;
+        return "model.User: " + name + "\nEmail: " + email + "\nAddress: " + address + "\nPhone: " + phoneNumber;
     }
 }

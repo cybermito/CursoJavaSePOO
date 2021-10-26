@@ -1,18 +1,20 @@
+import model.Doctor;
+import model.Patient;
+
 import java.util.Date;
-import static ui.UIMenu.*;
 
 public class Main {
     public static void main(String[] args) {
 /*
-        Doctor myDoctor = new Doctor();
-        myDoctor.name = "Doctor Who"; //Asignamos datos al atributo name
+        model.Doctor myDoctor = new model.Doctor();
+        myDoctor.name = "model.Doctor Who"; //Asignamos datos al atributo name
         myDoctor.showName(); //Llamada al método shoName()
-        myDoctor.showId(); //Vemos el contenido de la variable static id de la clase Doctor.
-        //System.out.println(Doctor.id);
+        myDoctor.showId(); //Vemos el contenido de la variable static id de la clase model.Doctor.
+        //System.out.println(model.Doctor.id);
 
-        Doctor myDoctor2 = new Doctor();
+        model.Doctor myDoctor2 = new model.Doctor();
         myDoctor2.showId();
-        //System.out.println(Doctor.id);
+        //System.out.println(model.Doctor.id);
 
  */
         // showMenu(); //Es un método de la clase ui que hemos importado al inicio del programa. Al importar la clase no
@@ -25,7 +27,7 @@ public class Main {
         System.out.println(myDoctor); //Carga el objeto myDoctor con el método toString() implícitamente.
 
         /*
-        for (Doctor.AvailableAppointment aA: myDoctor.getAvailableAppointments()){
+        for (model.Doctor.AvailableAppointment aA: myDoctor.getAvailableAppointments()){
             System.out.println(aA.getDate() + " " + aA.getTime());
         }
         */
@@ -41,7 +43,7 @@ public class Main {
         System.out.println(patient.getPhoneNumber());
         System.out.println();
 
-        System.out.println("Sacando información de una clase con el uso de toString(), clase sobreescrita en la clase User");
+        System.out.println("Sacando información de una clase con el uso de toString(), clase sobreescrita en la clase model.User");
         System.out.println(patient);
         /*
         System.out.println(patient.name);

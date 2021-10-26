@@ -1,3 +1,5 @@
+package model;
+
 public class Patient extends User{
     /*
     static int id = 0;
@@ -14,10 +16,10 @@ public class Patient extends User{
     private double height;
     private String blood;
 
-    Patient(String name, String email){
+    public Patient(String name, String email){
         //Llámamos al método constructor de la clase padre.
         super(name, email);
-        //id++; Comentado por la misma razón que lo hemos comentado en al clase Doctor.
+        //id++; Comentado por la misma razón que lo hemos comentado en al clase model.Doctor.
         //this.name = name; //Ya no hace falta esta construcción puesto que estos atributos están en la clase padre.
         //this.email = email;
     }
@@ -32,13 +34,13 @@ public class Patient extends User{
     public String getWeight(){
         return this.weight + " Kg.";
     }
-/*  Al crear la clase User estos getters y setter no hacen falta puesto que están creado en la clase padre User.
+/*  Al crear la clase model.User estos getters y setter no hacen falta puesto que están creado en la clase padre model.User.
     public static int getId() {
         return id;
     }
 
     public static void setId(int id) {
-        Patient.id = id;
+        model.Patient.id = id;
     }
 
     public String getName() {
@@ -103,7 +105,7 @@ public class Patient extends User{
         this.blood = blood;
     }
 
-    //Sobreescribiendo el método toString() para presentar todos los datos del objeto Patient
+    //Sobreescribiendo el método toString() para presentar todos los datos del objeto model.Patient
     @Override
     public String toString(){
         return super.toString() + "\nAge: " + birthday + "\nWeight: " + getWeight() + "\nHeight: " + getHeight() + "\nBlood: " + blood;
