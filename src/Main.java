@@ -1,4 +1,5 @@
 import model.Doctor;
+import model.ISchedulable;
 import model.Patient;
 import model.User;
 
@@ -69,6 +70,34 @@ public class Main {
 
         User userPatient = new Patient("Paciente", "email@correo.com");
         userPatient.showDataUser();
+
+        /*
+            Clases Anónimas: Las Clases Anónimas son una forma de instanciar clases abstractas sin necesidad de usar sus clases hijas. Pero este tipo de instanciación
+            tiene algunas restricciones: el ciclo de vida de estas instancias NO es duradero, no las tendremos disponibles durante toda la ejecución del programa.
+
+            // Clase Abstracta:
+                public abstract class Figura {
+                    abstract void dibujar();
+                }
+
+            // Clase Anónima:
+                User user = new User() {
+                  @Override
+                  public void showDataUser() {
+                    // Instrucciones...
+                  }
+                };
+         */
+        User user1 = new User("UserAnonimo", "email@mio.com") {
+            @Override
+            public void showDataUser() {
+                System.out.println("Doctor");
+                System.out.println("Hospital: Cruz Verde");
+                System.out.println("Departamento: Geriatría");
+            }
+        };
+
+        user1.showDataUser();
     }
 
 }
