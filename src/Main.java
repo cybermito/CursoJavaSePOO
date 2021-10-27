@@ -1,5 +1,6 @@
 import model.Doctor;
 import model.Patient;
+import model.User;
 
 import java.util.Date;
 
@@ -45,6 +46,7 @@ public class Main {
 
         System.out.println("Sacando información de una clase con el uso de toString(), clase sobreescrita en la clase model.User");
         System.out.println(patient);
+        System.out.println();
         /*
         System.out.println(patient.name);
         System.out.println(patient.email);
@@ -60,6 +62,13 @@ public class Main {
         System.out.println(patient.weight);
         System.out.println(patient.height);
         */
+
+        System.out.println("Utilizamos las clases y métodos abstractos");
+        User user = new Doctor("Antonio", "cybermito@gmail.com");
+        user.showDataUser();
+
+        User userPatient = new Patient("Paciente", "email@correo.com");
+        userPatient.showDataUser();
     }
 
 }
