@@ -2,11 +2,14 @@ import model.Doctor;
 import model.ISchedulable;
 import model.Patient;
 import model.User;
+import ui.UIMenu;
 
 import java.util.Date;
 
 public class Main {
     public static void main(String[] args) {
+
+        
 /*
         model.Doctor myDoctor = new model.Doctor();
         myDoctor.name = "model.Doctor Who"; //Asignamos datos al atributo name
@@ -99,5 +102,6 @@ public class Main {
 
         user1.showDataUser();
     }
+
 
 }
