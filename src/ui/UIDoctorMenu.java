@@ -37,7 +37,8 @@ public class UIDoctorMenu {
         do{
             System.out.println("\n");
             System.out.println("::Add Available Appointment");
-            for(int i = 0; i < 3; i++){
+            System.out.println(":: Select a Month");
+            for(int i = 0; i < 3; i++){ //Recorremos los meses por trimestre
                 int j = i + 1;
                 System.out.println(j + ". " + UIMenu.MONTHS[i]);
             }
@@ -55,8 +56,6 @@ public class UIDoctorMenu {
                 String date = sc.nextLine();
 
                 System.out.println("Your date is: " +  date + "\n1. Correct \n2. Change Date");
-
-
 
             }else if (response == 0){
                 showDoctorMenu();
