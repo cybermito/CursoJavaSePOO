@@ -26,10 +26,13 @@ public class Doctor extends User {
     //Esto se llama sobrecarga de constructores / métodos.
     public Doctor(String name, String email){
         super(name, email );
+        /*
         System.out.println("El nombre del model.Doctor asignado es: " + name);
         //id++; //Lo quitamos ya que el identificador se usaría directamente con una base de datos.
         //this.name = name; //Al igual que en la clase model.Patient esta parte del constructor ya no la necesitamos.
         this.speciality = speciality;
+
+         */
     }
 
     public String getSpeciality() {

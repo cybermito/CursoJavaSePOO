@@ -6,10 +6,12 @@ import ui.UIMenu;
 
 import java.util.Date;
 
+import static ui.UIMenu.showMenu;
+
 public class Main {
     public static void main(String[] args) {
 
-
+        showMenu();
 /*
         model.Doctor myDoctor = new model.Doctor();
         myDoctor.name = "model.Doctor Who"; //Asignamos datos al atributo name
@@ -24,19 +26,19 @@ public class Main {
  */
         // showMenu(); //Es un método de la clase ui que hemos importado al inicio del programa. Al importar la clase no
         //es necesario referenciar ni instanciar la clase general.
-
+/*
         Doctor myDoctor = new Doctor("Who", "del tiempo");
         myDoctor.addAvailableAppointment(new Date(), "4pm");
         myDoctor.addAvailableAppointment(new Date(), "10am");
         myDoctor.addAvailableAppointment(new Date(), "2pm");
         System.out.println(myDoctor); //Carga el objeto myDoctor con el método toString() implícitamente.
-
+*/
         /*
         for (model.Doctor.AvailableAppointment aA: myDoctor.getAvailableAppointments()){
             System.out.println(aA.getDate() + " " + aA.getTime());
         }
         */
-
+/*
         System.out.println();
         System.out.println();
         Patient patient = new Patient("Nuria Mariella", "numar@numilu.com");
@@ -51,6 +53,8 @@ public class Main {
         System.out.println("Sacando información de una clase con el uso de toString(), clase sobreescrita en la clase model.User");
         System.out.println(patient);
         System.out.println();
+
+ */
         /*
         System.out.println(patient.name);
         System.out.println(patient.email);
@@ -66,14 +70,14 @@ public class Main {
         System.out.println(patient.weight);
         System.out.println(patient.height);
         */
-
+/*
         System.out.println("Utilizamos las clases y métodos abstractos");
         User user = new Doctor("Antonio", "cybermito@gmail.com");
         user.showDataUser();
 
         User userPatient = new Patient("Paciente", "email@correo.com");
         userPatient.showDataUser();
-
+*/
         /*
             Clases Anónimas: Las Clases Anónimas son una forma de instanciar clases abstractas sin necesidad de usar sus clases hijas. Pero este tipo de instanciación
             tiene algunas restricciones: el ciclo de vida de estas instancias NO es duradero, no las tendremos disponibles durante toda la ejecución del programa.
@@ -91,6 +95,7 @@ public class Main {
                   }
                 };
          */
+/*
         User user1 = new User("UserAnonimo", "email@mio.com") {
             @Override
             public void showDataUser() {
@@ -101,6 +106,8 @@ public class Main {
         };
 
         user1.showDataUser();
+
+ */
     }
 
 }
